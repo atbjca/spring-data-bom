@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.springframework.data</groupId>
 	<artifactId>spring-data-bom</artifactId>
-	<version>2021.2.19-SNAPSHOT</version>
+	<version>2021.2.18-nes.patch.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Spring Data Release Train - BOM</name>
@@ -74,62 +74,182 @@
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-cassandra</artifactId>
-				<version>3.4.19-SNAPSHOT</version>
+				<version>3.4.18</version>
 			</dependency>
 
 			<!-- Spring Data Commons -->
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-commons</artifactId>
-				<version>2.7.19-SNAPSHOT</version>
+				<version>2.7.18</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-core</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-beans</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- Spring Data Couchbase -->
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-couchbase</artifactId>
-				<version>4.4.19-SNAPSHOT</version>
+				<version>4.4.18</version>
 			</dependency>
 
 			<!-- Spring Data Elasticsearch -->
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-elasticsearch</artifactId>
-				<version>4.4.19-SNAPSHOT</version>
+				<version>4.4.18</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-context</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-tx</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- Spring Data Geode -->
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-geode</artifactId>
-				<version>2.7.19-SNAPSHOT</version>
+				<version>2.7.18</version>
 			</dependency>
 
 			<!-- Spring Data JDBC -->
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-jdbc</artifactId>
-				<version>2.4.19-SNAPSHOT</version>
+				<version>2.4.18</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-tx</artifactId>
+					</exclusion>
+
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-context</artifactId>
+					</exclusion>
+
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-beans</artifactId>
+					</exclusion>
+
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-jdbc</artifactId>
+					</exclusion>
+
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-core</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-relational</artifactId>
-				<version>2.4.19-SNAPSHOT</version>
+				<version>2.4.18</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-tx</artifactId>
+					</exclusion>
+
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-context</artifactId>
+					</exclusion>
+
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-beans</artifactId>
+					</exclusion>
+
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-core</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- Spring Data JPA -->
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-jpa</artifactId>
-				<version>2.7.19-SNAPSHOT</version>
+				<version>2.7.18</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-orm</artifactId>
+					</exclusion>
+
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-context</artifactId>
+					</exclusion>
+
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-aop</artifactId>
+					</exclusion>
+
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-tx</artifactId>
+					</exclusion>
+
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-beans</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-core</artifactId>
+					</exclusion>
+
+				</exclusions>
 			</dependency>
 
 			<!-- Spring Data MongoDB -->
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-mongodb</artifactId>
-				<version>3.4.19-SNAPSHOT</version>
+				<version>3.4.18</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-tx</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-context</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-beans</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-core</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-expression</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- Spring Data Neo4j -->
@@ -150,45 +270,82 @@
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-redis</artifactId>
-				<version>2.7.19-SNAPSHOT</version>
+				<version>2.7.18</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-context</artifactId>
+					</exclusion>
+
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-tx</artifactId>
+					</exclusion>
+
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-oxm</artifactId>
+					</exclusion>
+
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-aop</artifactId>
+					</exclusion>
+
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-context-support</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- Spring Data REST -->
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-rest-webmvc</artifactId>
-				<version>3.7.19-SNAPSHOT</version>
+				<version>3.7.18</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-rest-core</artifactId>
-				<version>3.7.19-SNAPSHOT</version>
+				<version>3.7.18</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-rest-hal-explorer</artifactId>
-				<version>3.7.19-SNAPSHOT</version>
+				<version>3.7.18</version>
 			</dependency>
 
 			<!-- Spring Data KeyValue -->
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-keyvalue</artifactId>
-				<version>2.7.19-SNAPSHOT</version>
+				<version>2.7.18</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-context</artifactId>
+					</exclusion>
+
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-tx</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<!-- Spring Data Envers -->
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-envers</artifactId>
-				<version>2.7.19-SNAPSHOT</version>
+				<version>2.7.18</version>
 			</dependency>
 
 			<!-- Spring Data LDAP -->
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-ldap</artifactId>
-				<version>2.7.19-SNAPSHOT</version>
+				<version>2.7.18</version>
 			</dependency>
 
 		</dependencies>
@@ -418,19 +575,34 @@
 
 	</profiles>
 
-<repositories>
+<!--<repositories>-->
+<!--		<repository>-->
+<!--			<id>spring-snapshot</id>-->
+<!--			<url>https://repo.spring.io/snapshot</url>-->
+<!--			<snapshots>-->
+<!--				<enabled>true</enabled>-->
+<!--			</snapshots>-->
+<!--			<releases>-->
+<!--				<enabled>false</enabled>-->
+<!--			</releases>-->
+<!--		</repository>-->
+<!--		<repository>-->
+<!--			<id>spring-milestone</id>-->
+<!--			<url>https://repo.spring.io/milestone</url>-->
+<!--		</repository>-->
+<!--	</repositories>-->
+
+	<distributionManagement>
 		<repository>
-			<id>spring-snapshot</id>
-			<url>https://repo.spring.io/snapshot</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
+			<id>releases</id>
+			<name>Nexus Release Repository</name>
+			<url>${nexusReleaseUrl}</url>
 		</repository>
-		<repository>
-			<id>spring-milestone</id>
-			<url>https://repo.spring.io/milestone</url>
-		</repository>
-	</repositories></project>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Nexus Snapshot Repository</name>
+			<url>${nexusSnapshotUrl}</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+</project>
