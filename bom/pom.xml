@@ -256,14 +256,14 @@
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-neo4j</artifactId>
-				<version>6.3.19-SNAPSHOT</version>
+				<version>6.3.18</version>
 			</dependency>
 
 			<!-- Spring Data R2DBC -->
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-r2dbc</artifactId>
-				<version>1.5.19-SNAPSHOT</version>
+				<version>1.5.18</version>
 			</dependency>
 
 			<!-- Spring Data Redis -->
