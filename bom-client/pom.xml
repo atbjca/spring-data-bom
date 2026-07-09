@@ -7,9 +7,9 @@
 	<packaging>pom</packaging>
 
 	<parent>
-		<groupId>org.springframework.data</groupId>
-		<artifactId>spring-data-bom</artifactId>
-		<version>2021.2.19-SNAPSHOT</version>
+		<groupId>cn.bjca.footstone.bpring.data</groupId>
+		<artifactId>bjca-footstone-bpring-data-bom</artifactId>
+		<version>2021.2.18-nes.patch.1-SNAPSHOT</version>
 		<relativePath>../bom</relativePath>
 	</parent>
 
@@ -78,8 +78,8 @@
 
 		<!-- Spring Data Commons -->
 		<dependency>
-			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-commons</artifactId>
+			<groupId>cn.bjca.footstone.bpring.data</groupId>
+			<artifactId>bjca-footstone-bpring-data-commons</artifactId>
 		</dependency>
 
 		<!-- Spring Data Couchbase -->
@@ -157,8 +157,8 @@
 
 		<!-- Spring Data KeyValue -->
 		<dependency>
-			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-keyvalue</artifactId>
+			<groupId>cn.bjca.footstone.bpring.data</groupId>
+			<artifactId>bjca-footstone-bpring-data-keyvalue</artifactId>
 		</dependency>
 
 		<!-- Spring Data Envers -->

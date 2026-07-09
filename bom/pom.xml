@@ -2,8 +2,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.springframework.data</groupId>
-	<artifactId>spring-data-bom</artifactId>
+	<groupId>cn.bjca.footstone.bpring.data</groupId>
+	<artifactId>bjca-footstone-bpring-data-bom</artifactId>
 	<version>2021.2.18-nes.patch.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
@@ -79,19 +79,9 @@
 
 			<!-- Spring Data Commons -->
 			<dependency>
-				<groupId>org.springframework.data</groupId>
-				<artifactId>spring-data-commons</artifactId>
-				<version>2.7.18</version>
-				<exclusions>
-					<exclusion>
-						<groupId>org.springframework</groupId>
-						<artifactId>spring-core</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.springframework</groupId>
-						<artifactId>spring-beans</artifactId>
-					</exclusion>
-				</exclusions>
+				<groupId>cn.bjca.footstone.bpring.data</groupId>
+				<artifactId>bjca-footstone-bpring-data-commons</artifactId>
+				<version>2.7.18-nes.patch.1-SNAPSHOT</version>
 			</dependency>
 
 			<!-- Spring Data Couchbase -->
@@ -318,20 +308,9 @@
 
 			<!-- Spring Data KeyValue -->
 			<dependency>
-				<groupId>org.springframework.data</groupId>
-				<artifactId>spring-data-keyvalue</artifactId>
-				<version>2.7.18</version>
-				<exclusions>
-					<exclusion>
-						<groupId>org.springframework</groupId>
-						<artifactId>spring-context</artifactId>
-					</exclusion>
-
-					<exclusion>
-						<groupId>org.springframework</groupId>
-						<artifactId>spring-tx</artifactId>
-					</exclusion>
-				</exclusions>
+				<groupId>cn.bjca.footstone.bpring.data</groupId>
+				<artifactId>bjca-footstone-bpring-data-keyvalue</artifactId>
+				<version>2.7.18-nes.patch.1-SNAPSHOT</version>
 			</dependency>
 
 			<!-- Spring Data Envers -->
