@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.springframework.data</groupId>
-	<artifactId>spring-data-bom</artifactId>
-	<version>2025.0.13</version>
+	<groupId>cn.bjca.footstone.bpring.data</groupId>
+	<artifactId>bjca-footstone-bpring-data-bom</artifactId>
+	<version>2025.0.13-nes.patch.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Spring Data Release Train - BOM</name>
@@ -79,9 +79,9 @@
 
 			<!-- Spring Data Commons -->
 			<dependency>
-				<groupId>org.springframework.data</groupId>
-				<artifactId>spring-data-commons</artifactId>
-				<version>3.5.13</version>
+				<groupId>cn.bjca.footstone.bpring.data</groupId>
+				<artifactId>bjca-footstone-bpring-data-commons</artifactId>
+				<version>3.5.13-nes.patch.1-SNAPSHOT</version>
 			</dependency>
 
 			<!-- Spring Data Couchbase -->
@@ -172,9 +172,9 @@
 
 			<!-- Spring Data KeyValue -->
 			<dependency>
-				<groupId>org.springframework.data</groupId>
-				<artifactId>spring-data-keyvalue</artifactId>
-				<version>3.5.13</version>
+				<groupId>cn.bjca.footstone.bpring.data</groupId>
+				<artifactId>bjca-footstone-bpring-data-keyvalue</artifactId>
+				<version>3.5.13-nes.patch.1-SNAPSHOT</version>
 			</dependency>
 
 			<!-- Spring Data LDAP -->
@@ -413,7 +413,20 @@
 	</profiles>
 
 	<repositories>
-		
-		
+
+
 	</repositories>
+
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>Nexus Release Repository</name>
+			<url>${nexusReleaseUrl}</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Nexus Snapshot Repository</name>
+			<url>${nexusSnapshotUrl}</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
