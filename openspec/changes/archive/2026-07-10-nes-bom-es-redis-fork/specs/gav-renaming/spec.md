@@ -1,22 +1,4 @@
-# gav-renaming Specification
-
-## Purpose
-TBD - created by archiving change 2026-07-09-nes-bom-patch-2025. Update Purpose after archive.
-## Requirements
-### Requirement: BOM 制品 GAV 去特征化
-
-发布制品 `spring-data-bom`（`bom/pom.xml`）的坐标 MUST 从官方 `org.springframework.data:spring-data-bom` 重命名为 NES fork 坐标 `cn.bjca.footstone.bpring.data:bjca-footstone-bpring-data-bom`，version 为 `2025.0.13-nes.patch.1-SNAPSHOT`，使 BOM 制品与全家桶 fork 命名空间一致、私服制品坐标不残留官方自产坐标。
-
-#### Scenario: BOM 坐标重命名
-
-- **WHEN** 检查 `bom/pom.xml` 的 `<groupId>` / `<artifactId>` / `<version>`
-- **THEN** groupId 为 `cn.bjca.footstone.bpring.data`、artifactId 为 `bjca-footstone-bpring-data-bom`、version 为 `2025.0.13-nes.patch.1-SNAPSHOT`
-
-#### Scenario: 下游 import 坐标切换
-
-- **WHEN** 下游以 `import` 作用域引用本 BOM
-- **THEN** 使用 `cn.bjca.footstone.bpring.data:bjca-footstone-bpring-data-bom` 坐标即可托管全家桶版本
-- **AND** Java 包名 `org.springframework.data.*` 无需修改
+## MODIFIED Requirements
 
 ### Requirement: managed 依赖反映下游 fork
 
@@ -70,4 +52,3 @@ BOM 的 `<dependencyManagement>` 中，已完成下游 fork 的模块坐标 MUST
 - **THEN** 其坐标分别为 `cn.bjca.footstone.bpring.data:bjca-footstone-bpring-data-commons` / `-keyvalue` / `-elasticsearch` / `-redis`（不写 version，由 BOM 托管）
 - **AND** 官方坐标 `org.springframework.data:spring-data-commons/keyvalue/elasticsearch/redis` 不再出现，避免 "missing version" 校验失败
 - **AND** 其余 12 个模块 bom-client 声明保持官方坐标
-

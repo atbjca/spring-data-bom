@@ -89,8 +89,8 @@
 
 		<!-- Spring Data Elasticsearch -->
 		<dependency>
-			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-elasticsearch</artifactId>
+			<groupId>cn.bjca.footstone.bpring.data</groupId>
+			<artifactId>bjca-footstone-bpring-data-elasticsearch</artifactId>
 		</dependency>
 
 		<!-- Spring Data JDBC -->
@@ -134,8 +134,8 @@
 
 		<!-- Spring Data Redis -->
 		<dependency>
-			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-redis</artifactId>
+			<groupId>cn.bjca.footstone.bpring.data</groupId>
+			<artifactId>bjca-footstone-bpring-data-redis</artifactId>
 		</dependency>
 
 		<!-- Spring Data REST -->

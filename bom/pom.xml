@@ -93,9 +93,9 @@
 
 			<!-- Spring Data Elasticsearch -->
 			<dependency>
-				<groupId>org.springframework.data</groupId>
-				<artifactId>spring-data-elasticsearch</artifactId>
-				<version>5.5.13</version>
+				<groupId>cn.bjca.footstone.bpring.data</groupId>
+				<artifactId>bjca-footstone-bpring-data-elasticsearch</artifactId>
+				<version>5.5.13-nes.patch.1-SNAPSHOT</version>
 			</dependency>
 
 			<!-- Spring Data JDBC -->
@@ -146,9 +146,9 @@
 
 			<!-- Spring Data Redis -->
 			<dependency>
-				<groupId>org.springframework.data</groupId>
-				<artifactId>spring-data-redis</artifactId>
-				<version>3.5.13</version>
+				<groupId>cn.bjca.footstone.bpring.data</groupId>
+				<artifactId>bjca-footstone-bpring-data-redis</artifactId>
+				<version>3.5.13-nes.patch.1-SNAPSHOT</version>
 			</dependency>
 
 			<!-- Spring Data REST -->
