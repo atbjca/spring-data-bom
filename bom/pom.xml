@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>cn.bjca.footstone.bpring.data</groupId>
 	<artifactId>bjca-footstone-bpring-data-bom</artifactId>
-	<version>2021.2.18-nes.patch.1-SNAPSHOT</version>
+	<version>2021.2.18-nes.patch.1</version>
 	<packaging>pom</packaging>
 
 	<name>Spring Data Release Train - BOM</name>
@@ -81,7 +81,7 @@
 			<dependency>
 				<groupId>cn.bjca.footstone.bpring.data</groupId>
 				<artifactId>bjca-footstone-bpring-data-commons</artifactId>
-				<version>2.7.18-nes.patch.1-SNAPSHOT</version>
+				<version>2.7.18-nes.patch.1</version>
 			</dependency>
 
 			<!-- Spring Data Couchbase -->
@@ -95,7 +95,7 @@
 			<dependency>
 				<groupId>cn.bjca.footstone.bpring.data</groupId>
 				<artifactId>bjca-footstone-bpring-data-elasticsearch</artifactId>
-				<version>4.4.18-nes.patch.1-SNAPSHOT</version>
+				<version>4.4.18-nes.patch.1</version>
 			</dependency>
 
 			<!-- Spring Data Geode -->
@@ -250,7 +250,7 @@
 			<dependency>
 				<groupId>cn.bjca.footstone.bpring.data</groupId>
 				<artifactId>bjca-footstone-bpring-data-redis</artifactId>
-				<version>2.7.18-nes.patch.1-SNAPSHOT</version>
+				<version>2.7.18-nes.patch.1</version>
 			</dependency>
 
 			<!-- Spring Data REST -->
@@ -274,7 +274,7 @@
 			<dependency>
 				<groupId>cn.bjca.footstone.bpring.data</groupId>
 				<artifactId>bjca-footstone-bpring-data-keyvalue</artifactId>
-				<version>2.7.18-nes.patch.1-SNAPSHOT</version>
+				<version>2.7.18-nes.patch.1</version>
 			</dependency>
 
 			<!-- Spring Data Envers -->

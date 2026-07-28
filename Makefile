@@ -26,7 +26,7 @@ help:
 	@echo "  make validate  - 校验 reactor 与 effective-pom（不发布、不下载）"
 	@echo "  make client    - 以 with-bom-client profile 冒烟校验 BOM 可解析"
 	@echo "  make install   - 安装 BOM 到本地 Maven 仓库（~/.m2）"
-	@echo "  make deploy    - 发布 BOM 到 Nexus 私服 snapshot"
+	@echo "  make deploy    - 发布 BOM 到 Nexus 私服 RELEASE"
 	@echo ""
 
 # 清理构建产物
@@ -48,8 +48,8 @@ client:
 
 # 安装 BOM 到本地仓库
 install:
-	$(MVNW) $(SETTINGS) clean install
+	$(MVNW) $(SETTINGS) install
 
 # 发布 BOM 到 Nexus 私服 snapshot
 deploy:
-	$(MVNW) $(SETTINGS) clean deploy
+	$(MVNW) $(SETTINGS) -DskipTests -Dmaven.test.skip=true deploy

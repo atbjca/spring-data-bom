@@ -2,6 +2,31 @@
 
 This repository contains the Spring Data BOM (Bill of Materials).
 
+== NES release
+
+- BOM GAV: `cn.bjca.footstone.bpring.data:bjca-footstone-bpring-data-bom:2021.2.18-nes.patch.1` (`pom`)
+- Managed NES Data RELEASE modules: Commons / KeyValue / Redis `2.7.18-nes.patch.1`, Elasticsearch `4.4.18-nes.patch.1`
+- Nexus: `http://192.168.131.36:8088/repository/releases/`
+- Local gates: `./mvnw -pl bom -am -DskipTests install` then consumer import of the BOM
+- Exclusions: root aggregator POM and `bom-client` are validation-only and are not published RELEASE artifacts
+- Tag: `v2021.2.18-nes.patch.1`
+
+Usage (Maven):
+
+```xml
+<dependencyManagement>
+  <dependencies>
+    <dependency>
+      <groupId>cn.bjca.footstone.bpring.data</groupId>
+      <artifactId>bjca-footstone-bpring-data-bom</artifactId>
+      <version>2021.2.18-nes.patch.1</version>
+      <type>pom</type>
+      <scope>import</scope>
+    </dependency>
+  </dependencies>
+</dependencyManagement>
+```
+
 == Code of Conduct
 
 This project is governed by the link:CODE_OF_CONDUCT.adoc[Spring Code of Conduct]. By participating, you are expected to uphold this code of conduct. Please report unacceptable behavior to spring-code-of-conduct@pivotal.io.
