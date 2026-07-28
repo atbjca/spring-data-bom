@@ -40,12 +40,12 @@ validate:
 
 # 安装 bom 到本地仓库
 install:
-	$(MVNW) $(SETTINGS) -pl bom clean install
+	$(MVNW) $(SETTINGS) -pl bom -DskipTests install
 
 # 发布 bom 到 Nexus 私服（依据 bom/pom.xml 的 distributionManagement，
 # release 版进 releases 仓库，SNAPSHOT 版进 snapshots 仓库）
 deploy:
-	$(MVNW) $(SETTINGS) -pl bom clean deploy
+	$(MVNW) $(SETTINGS) -pl bom -DskipTests -Dmaven.test.skip=true deploy
 
 # 冒烟校验：激活 with-bom-client profile，验证 bom-client 通过本 BOM 解析依赖版本
 # 注：validate 阶段仅做模型/parent 解析；私服无法代理外网官方 jar 时勿升级到 verify

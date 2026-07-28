@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>cn.bjca.footstone.bpring.data</groupId>
 		<artifactId>bjca-footstone-bpring-data-bom</artifactId>
-		<version>2025.0.13-nes.patch.1-SNAPSHOT</version>
+		<version>2025.0.13-nes.patch.1</version>
 		<relativePath>../bom</relativePath>
 	</parent>
 
