@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>cn.bjca.footstone.bpring.data</groupId>
 	<artifactId>bjca-footstone-bpring-data-bom</artifactId>
-	<version>2021.2.18-nes.patch.1</version>
+	<version>2021.2.18-nes.patch.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Spring Data Release Train - BOM</name>
@@ -95,7 +95,7 @@
 			<dependency>
 				<groupId>cn.bjca.footstone.bpring.data</groupId>
 				<artifactId>bjca-footstone-bpring-data-elasticsearch</artifactId>
-				<version>4.4.18-nes.patch.1</version>
+				<version>4.4.18-nes.patch.2-SNAPSHOT</version>
 			</dependency>
 
 			<!-- Spring Data Geode -->

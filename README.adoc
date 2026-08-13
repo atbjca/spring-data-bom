@@ -2,14 +2,15 @@
 
 This repository contains the Spring Data BOM (Bill of Materials).
 
-== NES release
+== NES development snapshot
 
-- BOM GAV: `cn.bjca.footstone.bpring.data:bjca-footstone-bpring-data-bom:2021.2.18-nes.patch.1` (`pom`)
-- Managed NES Data RELEASE modules: Commons / KeyValue / Redis `2.7.18-nes.patch.1`, Elasticsearch `4.4.18-nes.patch.1`
-- Nexus: `http://192.168.131.36:8088/repository/releases/`
+- BOM GAV: `cn.bjca.footstone.bpring.data:bjca-footstone-bpring-data-bom:2021.2.18-nes.patch.2-SNAPSHOT` (`pom`)
+- Managed NES Data modules: Commons / KeyValue / Redis `2.7.18-nes.patch.1`, Elasticsearch `4.4.18-nes.patch.2-SNAPSHOT`
+- Prerequisite: the local Maven repository or configured read-only Nexus must resolve the Elasticsearch SNAPSHOT and its NES client closure
 - Local gates: `./mvnw -pl bom -am -DskipTests install` then consumer import of the BOM
 - Exclusions: root aggregator POM and `bom-client` are validation-only and are not published RELEASE artifacts
-- Tag: `v2021.2.18-nes.patch.1`
+- Release boundary: this SNAPSHOT must not be deployed to Nexus RELEASE or tagged; a separate release change must first replace every internal SNAPSHOT with an approved RELEASE
+- Previous stable RELEASE: `2021.2.18-nes.patch.1`, tag `v2021.2.18-nes.patch.1`
 
 Usage (Maven):
 
@@ -19,7 +20,7 @@ Usage (Maven):
     <dependency>
       <groupId>cn.bjca.footstone.bpring.data</groupId>
       <artifactId>bjca-footstone-bpring-data-bom</artifactId>
-      <version>2021.2.18-nes.patch.1</version>
+      <version>2021.2.18-nes.patch.2-SNAPSHOT</version>
       <type>pom</type>
       <scope>import</scope>
     </dependency>

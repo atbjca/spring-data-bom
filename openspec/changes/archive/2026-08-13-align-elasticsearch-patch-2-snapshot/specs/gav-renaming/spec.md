@@ -1,8 +1,5 @@
-# gav-renaming Specification
+## MODIFIED Requirements
 
-## Purpose
-TBD - created by archiving change 2026-07-09-nes-bom-gav-align. Update Purpose after archive.
-## Requirements
 ### Requirement: BOM 制品 GAV 去特征化
 
 发布制品 `spring-data-bom`（`bom/pom.xml`）的坐标 MUST 使用 NES fork 坐标 `cn.bjca.footstone.bpring.data:bjca-footstone-bpring-data-bom`，当前开发 version MUST 为 `2021.2.18-nes.patch.2-SNAPSHOT`，使 BOM 制品与全家桶 fork 命名空间一致且不覆盖已发布的 `2021.2.18-nes.patch.1`。
@@ -61,4 +58,3 @@ BOM 的 `<dependencyManagement>` 中，已完成下游 fork 的模块坐标 MUST
 - **WHEN** 激活 `with-bom-client` profile 并检查 `bom-client/pom.xml` 的 `<parent>`
 - **THEN** `<parent>` 为 `cn.bjca.footstone.bpring.data:bjca-footstone-bpring-data-bom:2021.2.18-nes.patch.2-SNAPSHOT`
 - **AND** `mvn -Pwith-bom-client validate` 能成功解析 parent 和 managed Elasticsearch
-
